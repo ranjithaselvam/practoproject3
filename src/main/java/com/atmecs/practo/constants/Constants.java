@@ -12,5 +12,5 @@ public class Constants {
 	public static final String ie_path="./lib/IEDriverServer.exe";
 	public static final String identifier_path="./src/test/resources/locator/identifier.properties";
 	public static final String inputFile_path="./src/test/resources/test data/input.xlsx";
-
+    public static final String log_path="./log4j.properties";
 }
