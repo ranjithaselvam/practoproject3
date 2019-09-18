@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Wait {
 	public static void explicitWait(WebDriver driver,String xpath)
 	{
-		WebDriverWait wait=new WebDriverWait(driver, 30);
+		WebDriverWait wait=new WebDriverWait(driver, 40);
 		WebElement element;
 		element= wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(xpath)));
 		element.click();

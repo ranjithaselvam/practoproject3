@@ -20,6 +20,7 @@ import com.atmecs.practo.testbase.Browser;
 
 import com.atmecs.practo.utils.ReadExcel;
 import com.atmecs.practo.validation.WebSiteValidation;
+import com.relevantcodes.extentreports.LogStatus;
 
 public class BookingDoctorAppointment extends Browser {
 
@@ -36,21 +37,22 @@ public class BookingDoctorAppointment extends Browser {
 	public void findAndBooking(String city, String specialist) throws IOException, InterruptedException {
 
 		stream1 = new FileInputStream(Constants.identifier_path);
-
+		//logger=extent.startTest("Booking details");
 		property1.load(stream1);
-
-		LoggerReportInformation.logReporter("Booking doctor appointment scenario started...");
 		Wait.implicitWait(driver);
+		LoggerReportInformation.logReporter("Booking doctor appointment scenario started...");
+		
 		driver.findElement(By.xpath(property1.getProperty("loc_doctor_xpath_slt"))).click();
 		driver.findElement(By.xpath(property1.getProperty("loc_city_xpath_txt"))).clear();
 
 		LoggerReportInformation.logReporter("select city");
 		driver.findElement(By.xpath(property1.getProperty("loc_city_xpath_txt"))).sendKeys(city);
 		driver.findElement(By.xpath(property1.getProperty("loc_chennai_xpath_slt"))).click();
-
-		driver.findElement(By.xpath(property1.getProperty("loc_speciality_xpath_txt"))).sendKeys(specialist);
+		logger.log(LogStatus.INFO, "location selected");
+		//driver.findElement(By.xpath(property1.getProperty("loc_speciality_xpath_txt"))).sendKeys(specialist);
 
 		LoggerReportInformation.logReporter("select specialist");
+		
 		driver.findElement(By.xpath(property1.getProperty("loc_dentist_xpath_slt"))).click();
 
 		String expectedDoctorName = driver.findElement(By.xpath(property1.getProperty("loc_docname_xpath_txt")))
@@ -79,9 +81,6 @@ public class BookingDoctorAppointment extends Browser {
 		String actualTime = driver.findElement(By.xpath(property1.getProperty("loc_acttime_xpath_txt"))).getText();
 		System.out.println("Actual time:" + actualTime);
 		LoggerReportInformation.logReporter("verify  doctor details are same as expected ");
-		
-
-	
 
 		LoggerReportInformation.logReporter("changing date and time...");
 

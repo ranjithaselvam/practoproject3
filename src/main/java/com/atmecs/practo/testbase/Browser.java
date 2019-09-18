@@ -4,14 +4,16 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
 
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-import org.testng.annotations.AfterTest;
+
 import org.testng.annotations.BeforeTest;
 
 import com.atmecs.practo.constants.Constants;
+import com.atmecs.practo.extentreport.ExtentReportClass;
+
 
 /**
  * Different browser setup to run the script in different different browser.
@@ -19,11 +21,10 @@ import com.atmecs.practo.constants.Constants;
  * @author ranjitha.selvam
  *
  */
-public class Browser {
+public class Browser extends ExtentReportClass {
 	
 	static Properties property = new Properties();
 	static FileInputStream stream;
-	public static WebDriver driver;
 
 	@BeforeTest
 	public static void setup() throws IOException {
@@ -49,14 +50,9 @@ public class Browser {
 
 		}
 		driver.get(url);
+		logger=extent.startTest("Url loading");
 		driver.manage().window().maximize();
 
 	}
-
-	
-	  @AfterTest 
-	  public void close() { 
-      driver.quit(); 
-      }
 	 
 }
