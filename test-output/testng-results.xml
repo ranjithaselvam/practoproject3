@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-09-17T13:16:47Z" name="Suite" finished-at="2019-09-17T13:18:49Z" duration-ms="121868">
+  <suite started-at="2019-09-18T14:13:58Z" name="Default suite" finished-at="2019-09-18T14:17:05Z" duration-ms="186549">
     <groups>
     </groups>
-    <test started-at="2019-09-17T13:16:47Z" name="Test" finished-at="2019-09-17T13:18:49Z" duration-ms="121868">
+    <test started-at="2019-09-18T14:13:58Z" name="Default test" finished-at="2019-09-18T14:17:05Z" duration-ms="186549">
       <class name="com.atmecs.practo.testscript.BookingDoctorAppointment">
-        <test-method is-config="true" signature="startReport()[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-17T13:16:47Z" name="startReport" finished-at="2019-09-17T13:16:47Z" duration-ms="718" status="PASS">
+        <test-method is-config="true" signature="startReport()[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-18T14:13:58Z" name="startReport" finished-at="2019-09-18T14:13:58Z" duration-ms="566" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-17T13:16:47Z" name="setup" finished-at="2019-09-17T13:17:31Z" duration-ms="43113" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-18T14:13:58Z" name="setup" finished-at="2019-09-18T14:16:03Z" duration-ms="125145" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="findAndBooking(java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-17T13:17:39Z" name="findAndBooking" data-provider="bookingDetails" finished-at="2019-09-17T13:18:47Z" duration-ms="67230" status="PASS">
+        <test-method signature="findAndBooking(java.lang.String, java.lang.String)[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-18T14:16:12Z" name="findAndBooking" data-provider="bookingDetails" finished-at="2019-09-18T14:17:04Z" duration-ms="51840" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- findAndBooking -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-17T13:18:47Z" name="tearDown" finished-at="2019-09-17T13:18:49Z" duration-ms="2633" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-18T14:17:04Z" name="tearDown" finished-at="2019-09-18T14:17:05Z" duration-ms="1068" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -42,11 +42,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="endReport()[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-17T13:18:51Z" name="endReport" finished-at="2019-09-17T13:18:56Z" duration-ms="4524" status="PASS">
+        <test-method is-config="true" signature="endReport()[pri:0, instance:com.atmecs.practo.testscript.BookingDoctorAppointment@6b4a4e18]" started-at="2019-09-18T14:17:05Z" name="endReport" finished-at="2019-09-18T14:17:10Z" duration-ms="4219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- endReport -->
       </class> <!-- com.atmecs.practo.testscript.BookingDoctorAppointment -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

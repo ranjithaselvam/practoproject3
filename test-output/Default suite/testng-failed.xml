@@ -6,8 +6,10 @@
       <class name="com.atmecs.practo.testscript.BookingDoctorAppointment">
         <methods>
           <include name="setup"/>
-          <include name="close"/>
+          <include name="tearDown"/>
           <include name="findAndBooking" invocation-numbers="0"/>
+          <include name="startReport"/>
+          <include name="endReport"/>
         </methods>
       </class> <!-- com.atmecs.practo.testscript.BookingDoctorAppointment -->
     </classes>

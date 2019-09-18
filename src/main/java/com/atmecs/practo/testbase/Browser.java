@@ -43,9 +43,10 @@ public class Browser extends ExtentReportClass {
 			System.setProperty("webdriver.gecko.driver", Constants.fireFox_path);
 			driver = new FirefoxDriver();
 			break;
-		case "internetexplorer":
-			System.setProperty("webdriver.ie.river", Constants.ie_path);
+		case "ie":
+			System.setProperty("webdriver.ie.driver", Constants.ie_path);
 			driver = new InternetExplorerDriver();
+			
 			break;
 
 		}
